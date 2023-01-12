@@ -1,0 +1,50 @@
+<div class="login-container">
+    <img class="film" src="assets/images/Marvel.png" alt="">
+    <img class="film1" src="assets/images/don.png" alt="">
+    <div class="login-form">
+        <img  src="assets/images/logo.png" alt="" style="width: 80%;margin-top: 3%;margin-left: 10%;">
+   
+      <div class="form-group">
+        <label for="uname">Username</label>
+        <input
+          type="text"
+          name="uname"
+          class="form-control"
+          placeholder="username"
+          [(ngModel)]="uname"
+
+        />
+       
+      <div class="form-group">
+        <label for="uname">Account No:</label>
+        <input
+          type="text"
+          name="acc"
+          class="form-control"
+          placeholder="Account No:"
+          [(ngModel)]="acno"
+        />
+      </div>
+      <div class="form-group">
+        <label for="pword">Password</label>
+        <input
+          type="password"
+          name="pword"
+          class="form-control"
+          placeholder="password"
+          [(ngModel)]="psw"
+
+        />
+      </div>
+      <div class="btn-container">
+        <br>
+        <button type="submit" class="btn btn-danger" style="width: 70%;margin-left: 15%;" (click)="register()">REGISTER</button>
+        <br> <br>
+        <p style="color: azure;text-align: center;">Already have account?</p>
+        <button type="submit" class="btn btn-success" style="width: 30%;margin-left: 35%;height: 35px;margin-top: -20px;" (click)="loginin()">
+            Sign in
+        </button>
+
+      </div>
+    </div>
+</div>

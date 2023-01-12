@@ -1,0 +1,42 @@
+.login-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(15deg, #0338e4 0%, #f31111 100%);
+    position: relative;
+}
+.film {
+    position: absolute;
+    top: 260px;
+    right: 0px;
+    width: 718px;
+  }
+  .film1 {
+    position: absolute;
+    width: 478px;
+    left: 0px;
+    top: 34px;
+  }
+  .login-form {
+    width: 370px;
+    height: 510px;
+    padding: 20px;
+    background-color:  linear-gradient(15deg, #0338e4 0%, #f31111 100%);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 610px;
+    box-shadow: 5px 5px 20px #070707;
+    margin-bottom: 100px;
+}
+    .form-group {
+      margin-top: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    .btn-container {
+      position: relative;
+     
+      
+    }
+  
