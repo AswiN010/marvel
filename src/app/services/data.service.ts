@@ -5,8 +5,31 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class DataService {
-
-  constructor(private router:Router) { }
+ currentuser=''
+  constructor(private router:Router) {
+    this.get()
+   }
+valid()
+{  if(this.userDetails)
+  {
+  localStorage.setItem('database',JSON.stringify(this.userDetails))
+  }
+  if(this.currentuser)
+  {
+  localStorage.setItem('currentuser',JSON.stringify(this.currentuser))
+  }
+}
+get()
+{
+  if(localStorage.getItem('database'))
+  {
+    this.currentuser=JSON.parse(localStorage.getItem('currentuser') || "")
+  }
+  if(localStorage.getItem('currentuser'))
+  {
+    this.currentuser=JSON.parse(localStorage.getItem('currentuser') || "")
+  }
+}
 
   userDetails: any = {
     1000: { acno: 1000, username: "anu", password: "12345"},
@@ -14,6 +37,7 @@ export class DataService {
     1002: { acno: 1002, username: "arun", password: "12345"}
   }
 
+  
  register(acno:any,uname:any,psw:any)
  {
   var userDetails = this.userDetails
@@ -33,8 +57,10 @@ export class DataService {
 
     if (acno in userDetails) 
     {if (psw==userDetails[acno]["password"]) 
-    {
-     
+    {  this.currentuser=userDetails[acno]["username"]
+      this.valid()
+      // this.get()
+    
      return true
     } 
     else 

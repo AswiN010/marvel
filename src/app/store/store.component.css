@@ -1,0 +1,341 @@
+.header-container {
+    width: 100%;
+    height: 40px;
+    background-color: #fd0909;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+    .logo1 {
+      
+      margin-left: 40px;
+      cursor: pointer;
+    }
+    .logout {
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 40px;
+      cursor: pointer;
+    }
+  
+  .masthead {
+    padding: 3rem 0 7rem;
+    position: relative;
+    background-color: #6e6c6c;
+    background-image: url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, #8d8989 0%, #f78a84 100%);
+    background-size: cover;
+    z-index: 0
+  }
+  
+  .masthead svg.wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0
+  }
+  
+  .masthead h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.1;
+    z-index: 1
+  }
+  
+  .masthead h2 {
+    color: rgba(255, 255, 255, .6);
+    font-weight: 600;
+    z-index: 1;
+    font-size: 1.2rem
+  }
+  
+  .masthead a {
+    color: rgba(12, 11, 11, 0.8);
+    text-decoration: underline;
+    z-index: 1
+  }
+  
+  .masthead a:hover {
+    color: #fff
+  }
+  
+  .masthead a:active {
+    text-decoration: none
+  }
+  
+  @media(min-width:992px) {
+    .masthead h1 {
+        font-size: 3rem
+    }
+    .masthead h2 {
+        font-size: 1.5rem
+    }
+  }
+  
+  .masthead .masthead-cards {
+    position: relative;
+    z-index: 1
+  }
+  
+  .masthead .masthead-cards .shape {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50% 70% 70% 30%/30% 30% 70% 70%
+  }
+  
+  .masthead .masthead-cards .card {
+    opacity: 1;
+    border-radius: 20px;
+    margin-left: 5px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    /* color: #040709; */
+    transition: .15s all
+    
+  }
+  
+  .masthead .masthead-cards .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem
+  }
+  
+  .masthead .masthead-cards .card:active {
+    margin-top: inherit;
+    margin-bottom: inherit
+  }
+  
+  .masthead .masthead-cards .card.border-bottom-blue:hover {
+    color: #2092ed
+  }
+  
+  .masthead .masthead-cards .card.border-bottom-green:hover {
+    color: #28a745
+  }
+  
+  .masthead .masthead-cards .card.border-bottom-red:hover {
+    color: #dd3d31
+  }
+  
+  .masthead .masthead-cards .card.border-bottom-yellow:hover {
+    color: #ffc107
+  }
+  
+  .masthead-page {
+    padding: 1rem 0 4rem
+  }
+  
+  @media(min-width:992px) {
+    .masthead-page h1 {
+        font-size: 2.5rem
+    }
+  }
+  
+  .border-bottom-yellow {
+    border-color: #ffc107!important;
+  }
+  
+  .border-bottom-red {
+    border-color: #dd3d31!important;
+  }
+  
+  .border-bottom-blue {
+    border-color: #2092ed!important;
+  }
+  
+  .border-bottom-green {
+    border-color: #28a745!important;
+  }
+  
+  .border-bottom-blue, .border-bottom-green, .border-bottom-red, .border-bottom-yellow {
+    border-bottom: .4rem solid!important;
+  }
+  .shadow-lg {
+    box-shadow: 0 2rem 1.5rem -1.5rem rgba(33,37,41,.15),0 0 1.5rem .5rem rgba(33,37,41,.05)!important;
+  }
+  .border-0 {
+    border: 0!important;
+  }
+  
+
+  /* cards */
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #7f7fd5;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+      
+      /* body{
+          background-color:#f3f6fd ;
+          font-size: 11.5px;
+          font-weight: bold;
+          color: rgb(189, 196, 203);
+      } */
+      
+      .card1{
+          padding: 2% 7%;
+          color: #f1f1f4;
+          background-color: #090909;
+      }
+      
+      ul{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      }
+      
+      ul >li{
+          padding: 4px;
+      }
+      
+      ul > li:hover{
+          color:#957bda;
+          cursor: pointer;
+      }
+      
+      hr{
+          border-width: 3px;
+      }
+      
+      .social > i{
+          padding: 1%;
+          font-size: 15px;
+      }
+      
+      .social > i:hover{
+          color:#957bda;
+          cursor:pointer;
+      }
+      
+      .policy > div{
+          padding: 4px;
+      }
+      
+      .heading{
+          font-family: 'Titillium Web', sans-serif;
+          color: white;
+      }
+      
+      .divider{
+          border-top: 2px solid rgba(189, 196, 203, 0.5);;
+      }
+      .carousel-item {
+        height: 100vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }

@@ -32,9 +32,9 @@
 
     .login-form {
         width: 24%;
-        height: 440px;
+        height: 460px;
         padding: 20px;
-        background-color:  linear-gradient(15deg, #4369e5 0%, #f31111 100%);
+        /* background-color:  linear-gradient(15deg, #4369e5 0%, #f31111 100%); */
         border-radius: 10px;
         position: absolute;
         bottom: 150px;

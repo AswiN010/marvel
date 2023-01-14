@@ -8,9 +8,9 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./room.component.css']
 })
 export class RoomComponent {
-
-  constructor(private router: Router, private ds: DataService) { }
-
+user=''
+  constructor(private router: Router, private ds: DataService) { 
+  this.user=this.ds.currentuser}
   ngOnInit(): void {
   }
 
